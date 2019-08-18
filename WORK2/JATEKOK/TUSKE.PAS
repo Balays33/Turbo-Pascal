@@ -1,0 +1,369 @@
+Program Tuske;
+Uses Crt,Graph;
+type param=array [1..3,1..2] of byte;
+var tabla: array [1..9,1..9] of byte;
+    gd,gm       : integer;
+    x0,y0,GrOszt:integer;
+    ch:char;
+    par:param;
+    i:byte;
+
+Procedure GrInit;       {A grafikus kepernyo inicializalasa}
+begin
+    DetectGraph(gd,gm);
+    if gd=1 then gm:=0;
+    InitGraph(gd,gm,'e:\tp\bgi');
+            {A .BGI file-nek abban az alkonyvtarban kell lenni,}
+            {ahonnan a programot elinditjuk}
+
+    Case (GetMaxX div 20)>(GetMaxY div 20) of
+         True : GrOszt:=GetMaxY div 20;
+         False: GrOszt:=GetMaxX div 20;
+    end;
+    SetBKColor(LightGray);
+    if gd=1 then SetTextStyle(1,0,3) else SetTextStyle(1,0,5);
+end;
+
+
+Procedure Tablainit;   {A tablat jelkepezo tombvaltozo kitoltese}
+var i,j:integer;
+begin
+    for i:=1 to 9 do
+        for j:=1 to 9 do tabla[i,j]:=255;  {A nem hasznalt mezok letiltasa}
+    for i:=4 to 6 do
+        for j:=1 to 9 do begin
+                          Tabla[i,j]:=1;   {A babuk beallitasa}
+                          Tabla[j,i]:=1;
+                         end;
+    tabla[5,5]:=0;      {A kozepso mezo kiuritese}
+end;
+
+
+Procedure Color(i,j:byte);  {A szinek es kitoltesi mintak beallitasa}
+begin                       {Hercules kepernyo hasznalata miatt}
+    SetColor(j);
+    SetFillStyle(i,j);
+end;
+
+
+Procedure Alap;                  {A tabla alapszinenek beallitasa}
+begin
+    case gd of
+          1 : Color(1,1);        {CGA kepernyo}
+        3,9 : Color(1,Green);    {EGA,VGA kepernyo}
+          7 : Color(9,White);    {Hercules kepernyo}
+    end;
+end;
+
+
+Procedure Pszin(i:byte);         {A babu alapszinenek beallitasa}
+begin
+    Case gd of
+          1 : if i=3 then Color(1,2) else Color(1,3);              {CGA}
+        3,9 : if i=3 then Color(1,LightRed) else Color(1,Yellow);  {EGA,VGA}
+          7 : Color(1,White);                                      {Hercules}
+    end;
+    if i=0 then Color(1,0);   {Az ures mezon a babu mindenkepp hatterszinu}
+end;
+
+
+Procedure Vszin(i:byte);      {A vonalak szinenek beallitasa}
+begin
+    Case gd of
+          1 : case i of
+                   1 : Color(1,2);    {CGA, alaphelyzetben levo babu}
+                   2 : Color(1,2);    {CGA, ugrasra kijelolt babu}
+                   3 : Color(1,3);    {CGA, eppen atugrott babu}
+              end;
+        3,9 : Color(1,Blue);          {EGA,VGA}
+          7 : Color(1,Black);         {Hercules}
+    end;
+end;
+
+
+Procedure Torol(x,y,r:integer);   {Babu letorlese}
+begin
+   Alap;
+   Bar(x-r,y-r-3,x+r+3,y+r);
+end;
+
+
+Procedure Pofa(i:byte;x,y:integer);    {Babu kirajzolasa}
+var r,j:integer;
+begin
+    r:=(4*GrOszt) div 5;               {Babumeret meghatarozasa}
+    if i<255 then begin
+                   Torol(x,y,r);
+                   pszin(i);
+                   if i mod 2=1 then
+                                for j:=1 to 2 do begin               {Alaphelyzetu illetve}
+                                                  inc(x);dec(y);     {babu kiemelese}
+                                                  Circle(x,y,r) ;
+                                                 end;
+                   PieSlice(x,y,0,360,r);          {Babu lapjanak kiszinezese}
+                   Vszin(i);
+                   Circle(x,y,r) ;
+                   if i>0 then begin               {Arc kirajzolasa}
+                                Circle(x-r div 2,y-r div 4,GrOszt div 5);
+                                Circle(x+r div 2,y-r div 4,GrOszt div 5);
+                                Case i of
+                                     1 : begin
+                                          MoveTo(x-r div 2,y+r div 3);
+                                          LineTo(x+r div 2,y+r div 3);
+                                         end;
+                                     2 : Arc(x,y-r div 10,225,315,2*r div 3);
+                                     3 : Arc(x,y+3*r div 4,45,135,2*r div 3);
+                                end;
+                               end;
+                  end;
+end;
+
+
+Procedure Kirajzol;
+var i,j:integer;
+begin
+    x0:=GetMaxX div 2-8*GrOszt;    {A tabla felrajzolasahoz szukseges}
+    y0:=GetMaxY div 2-8*GrOszt;    {kepernyoterulet bal felso sarka}
+    vszin(1);
+    for i:=1 to 4 do               {A tabla felrajzolasa, kiszinezese}
+        FillEllipse(GetMaxX div 2-i,GetMaxY div 2+i,10*GrOszt-1,10*GrOszt-1);
+    Alap;
+    FillEllipse(GetMaxX div 2,GetMaxY div 2,10*GrOszt-1-2,10*GrOszt-1-2);
+    for i:=1 to 9 do
+        for j:=1 to 9 do           {A babuk felrajzolasa}
+            pofa(tabla[i,j],x0+2*(i-1)*GrOszt,y0+2*(j-1)*GrOszt);
+end;
+
+
+function irany:byte;    {A klaviatura leolvasasa}
+var ir : byte;
+begin
+     ir:=15;
+     Repeat
+          repeat until KeyPressed;
+          ch:=readKey;
+          if ch=#0 then begin     {Funkciobillentyu lett leutve?}
+                         ch:=ReadKey;
+                         case ch of
+                              #80: ir:=1;
+                              #72: ir:=2;
+                              #77: ir:=3;
+                              #75: ir:=4;
+                         end;
+                        end
+                   else case ch of
+                             #27 : begin        {Esc}
+                                    CloseGraph;
+                                    halt(0);
+                                   end;
+                             #13 : ir:=0;       {Enter}
+                        end;
+     Until ir in [0..4];
+     irany:=ir;
+end;
+
+Procedure NyilKi(x,y:integer);                  {Nyil kirajzolasa}
+begin
+    Vszin(1);
+    MoveTo(x0+2*(x-1)*GrOszt,y0+2*(y-1)*GrOszt+4*GrOszt div 5);
+    LineRel(-GrOszt div 6,GrOszt div 3);
+    LineRel(2*GrOszt div 6,0);
+    LineRel(-GrOszt div 6,-GrOszt div 3);
+end;
+
+
+Procedure NyilLe(x,y:integer);                  {Nyil letorlese}
+var x1,y1:integer;
+begin
+    Alap;
+    x1:=x0+2*(x-1)*GrOszt-GrOszt div 6;
+    y1:=y0+2*(y-1)*GrOszt+4*GrOszt div 5;
+    Bar(x1,y1,x1+2*GrOszt div 6,y1+GrOszt div 3);
+end;
+
+procedure kijelol(var par:param);       {Ugrasok vegpontjainak kijelolese}
+var elso,masodik,ok : boolean;
+    i,j,k           : byte;
+    dx,dy           : integer;
+begin
+    i:=5;j:=5;
+    Repeat
+    elso:=false;masodik:=false;
+      Repeat
+         Nyilki(i,j);
+         k:=irany;
+         NyilLe(i,j);
+         case k of
+              0 : elso:=true;                     {Kivalasztas nyugtazasa}
+              1 : if j<9 then begin
+                               if tabla[i,j+1]<255 then inc(j);
+                              end;
+              2 : if j>1 then begin
+                               if tabla[i,j-1]<255 then dec(j);
+                              end;                                   {Kezdopont mozgatasa}
+              3 : if i<9 then begin
+                               if tabla[i+1,j]<255 then inc(i);
+                              end;
+              4 : if i>1 then begin
+                               if tabla[i-1,j]<255then dec(i);
+                              end;
+         end;
+         if elso then begin
+                       if tabla[i,j]=1 then tabla[i,j]:=2 else elso:=false;
+                      end;
+      Until elso;                                       {Kezdopont megvan}
+      pofa(tabla[i,j],x0+2*(i-1)*GrOszt,y0+2*(j-1)*GrOszt);
+      par[1,1]:=i;par[1,2]:=j;                       {Kezdopont tarolasa}
+      Repeat
+         NyilKi(i,j);
+         k:=irany;
+         NyilLe(i,j);
+         case k of
+              0 : if (par[1,1]=i) and (par[1,2]=j) then begin
+                                                         elso:=false;    {elso vegpont torlese}
+                                                         tabla[i,j]:=1;
+                                                         pofa(tabla[i,j],x0+2*(i-1)*GrOszt,y0+2*(j-1)*GrOszt);
+                                                         end
+                                                   else masodik:=tabla[i,j]=0;  {masodik vegpont nyugtazas}
+              1 : if j<9 then begin
+                               if tabla[i,j+1]<255 then inc(j);
+                              end;
+              2 : if j>1 then begin
+                               if tabla[i,j-1]<255 then dec(j);
+                              end;                                  {Vegpont mozgatasa}
+              3 : if i<9 then begin
+                               if tabla[i+1,j]<255 then inc(i);
+                              end;
+              4 : if i>1 then begin
+                               if tabla[i-1,j]<255then dec(i);
+                              end;
+         end;
+         dx:=par[1,1]-i;             {Kijeloles ervenyessegenek ellenorzese}
+         dy:=par[1,2]-j;
+         masodik:=masodik and (tabla[i+dx div 2,j+dy div 2]=1);
+         if masodik then
+            masodik:=((abs(dx)=0) and (abs(dy)=2)) or ((abs(dy)=0) and (abs(dx)=2));
+      Until masodik or not elso;
+    until masodik;
+    par[2,1]:=i;par[2,2]:=j;         {Vegpont tarolasa}
+end;
+
+
+Procedure Mozgat(par:param);          {Babuk athelyezese}
+var dx,dy:integer;
+    i,j,k:byte;
+begin
+    dx:=par[1,1]-par[2,1];
+    dy:=par[1,2]-par[2,2];
+    i:=par[2,1]+dx div 2;             {Az atugrott babu koordinatai}
+    j:=par[2,2]+dy div 2;
+    if tabla[i,j]=1 then begin        {A babuk atrajzolasa}
+        tabla[i,j]:=3;
+        pofa(tabla[i,j],x0+2*(i-1)*GrOszt,y0+2*(j-1)*GrOszt);
+        Tabla[par[1,1],par[1,2]]:=0;
+        Tabla[par[2,1],par[2,2]]:=2;
+        for k:=1 to 2 do begin
+                      i:=par[k,1];
+                      j:=par[k,2];
+                      pofa(tabla[i,j],x0+2*(i-1)*GrOszt,y0+2*(j-1)*GrOszt);
+                      end;
+        Delay(100);
+        Tabla[par[2,1],par[2,2]]:=1;
+        i:=par[2,1]+dx div 2;
+        j:=par[2,2]+dy div 2;
+        tabla[i,j]:=0;
+        pofa(tabla[i,j],x0+2*(i-1)*GrOszt,y0+2*(j-1)*GrOszt);
+        for k:=1 to 2 do begin
+                      i:=par[k,1];
+                      j:=par[k,2];
+                      pofa(tabla[i,j],x0+2*(i-1)*GrOszt,y0+2*(j-1)*GrOszt);
+                      end;
+    end;
+end;
+
+Function Vege(var nr:byte):boolean;        {Atugorhato babuk letezesenek ellenorzese}
+var i,j : byte;
+begin
+    nr:=0;
+    Vege:=true;
+    for i:=1 to 9 do
+        for j:=2 to 8 do        {Fuggoleges szomszedok ellenorzese}
+            if (tabla[i,j]=1) and (tabla[i,j+1]+tabla[i,j-1]=1) then vege:=false;
+    for i:=2 to 8 do
+        for j:=1 to 9 do        {Vizszintes szomszedok ellenorzese}
+            if (tabla[i,j]=1) and (tabla[i-1,j]+tabla[i+1,j]=1) then vege:=false;
+    for i:=1 to 9 do
+        for j:=1 to 9 do
+            if tabla[i,j]=1 then inc(nr);     {A tablan levo babuk megszamolasa}
+end;
+
+
+Function befejezes(nr:integer):Boolean;       {A befejezo kepernyo felrajzolasa}
+var st : string;
+    ch : char;
+    i  : integer;
+begin
+    SetTextJustify(1,2);
+    OutTextXY(GetMaxX div 2,GetMaxY div 2,'V‚ge');
+    Repeat
+          ch:=ReadKey;
+    until (ch=#13) or (ch=#27);
+    ClearDevice;
+    Alap;                                  {Nagymeretu babu rajza}
+    Bar(0,0,GetMaxX,GetMaxY);
+    Case (GetMaxX div 2)>(GetMaxY div 2) of
+         True : GrOszt:=GetMaxY div 2;
+         False: GrOszt:=GetMaxX div 2;
+    end;
+    if nr>10 then i:=3 else begin
+                             if nr=1 then i:=2 else i:=1;
+                            end;
+    Str(nr:2,st);
+    pofa(i,GetMaxX div 2,GetMaxY div 2);
+    Case i of                              {Eredmeny kiirasa}
+         1: begin
+             SetTextJustify(1,0);
+             OutTextXY(GetMaxX div 2,GetMaxY div 2,'el‚g j¢!!');
+             SetTextJustify(1,2);
+             OutTextXY(GetMaxX div 2,GetMaxY div 2,st+' b bu maradt');
+            end;
+         2: begin
+             SetTextJustify(1,0);
+             OutTextXY(GetMaxX div 2,GetMaxY div 2,'gartul lok!!');
+             SetTextJustify(1,2);
+             OutTextXY(GetMaxX div 2,GetMaxY div 2,'egy b bu maradt');
+            end;
+         3: begin
+             SetTextJustify(1,0);
+             OutTextXY(GetMaxX div 2,GetMaxY div 2,'nem t£l j¢!');
+             SetTextJustify(1,2);
+             OutTextXY(GetMaxX div 2,GetMaxY div 2,st+' b bu maradt');
+            end;
+    end;
+    SetTextJustify(1,0);                             {Uj jatek felajanlasa}
+    OutTextXY(GetMaxX div 2,GetMaxY-2,'j tszol m‚g? i/n');
+    Repeat
+         Ch:=ReadKey;
+    Until (UpCase(ch)='I') or (UpCase(ch)='N') or (ch=#27);
+    Case (GetMaxX div 20)>(GetMaxY div 20) of
+         True : GrOszt:=GetMaxY div 20;
+         False: GrOszt:=GetMaxX div 20;
+    end;
+    befejezes:=(UpCase(ch)='N') or (ch=#27);
+end;
+
+
+
+begin
+   GrInit;
+   Repeat
+    ClearDevice;
+    TablaInit;
+    KiRajzol;
+    Repeat
+         Kijelol(par);
+         Mozgat(par);
+    Until vege(i);
+   Until befejezes(i);
+   CloseGraph;
+end.

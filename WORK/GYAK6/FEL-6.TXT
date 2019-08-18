@@ -1,0 +1,37 @@
+ 1. Rendez‚si algoritmus meg‚rt‚se, kipr¢b l sa-->RENDEMO.pas program
+     t¡r sa 10 sz mra.
+
+ 2. Elj r sok meg‚rt‚se.
+    Egy azonos feladat megold sa mind a k‚t elj r stipussal.
+    F“programb¢l mind a k‚t elj r s megh¡v sa, az eredm‚ny ki¡r sa.
+    Javasolt t‚ma: hatv ny el“ ll¡t sa. a^x = exp(x*ln(a))   azaz
+					      exp(kitev“*ln(alap))
+
+P‚ld k men ‚s alprogramok haszn lat ra:
+
+    1. P‚ldamen.                			(ALAPMENU.PAS)
+    2. K‚sz feladat, melyben men ‚s elj r sok haszn lat val sz moljuk ki a 
+       sz mtani, m‚rtani, n‚gyzetes  tlagokat.          (ATLAGOK.PAS)
+    3. F‚lig k‚sz feladat, melyben n‚gy kl”nb”z‹ feladat oldathat¢ meg men
+       seg¡ts‚g‚vel.(n‚gyzet adatainak sz m¡t sa, faktori lis sz m¡t s, henger
+       adatainak sz m¡t sa, szinusz‚rt‚kek megad sa)    (MENUFEL.PAS)
+    4. Egy 10 elemû vektor felt”lt‚se, kiirat sa, minimum nak sz m¡t sa ‚s 
+       idex‚nek kiirat sa. A feladat az alprogramok elk‚sz¡t‚s‚hez ad seg¡ts‚get.
+							(MINKER.PAS)
+    5. Mint el‹z‹ feladat, csak a minimum el‹fordul s t is figyeljk ‚s az
+       ”sszes indexet kiiratjuk.			(MINKER2.PAS)
+    6. K‚t vektor felt”lt‚se v‚letlensz mokkal. Egy 3. vektor megad sa £gy,
+       hogy adott felt‚tel szerint kapja az elemeit az el‹z‹ k‚t vektor
+       valamelyik‚b‹l.          			(VEKALPR1.PAS)
+    7. Vektor rendez‚se minimum keres‚s m¢dszer‚vel.  	(VEKALPR2.PAS) 
+
+
+    Tov bbi ”tletek elj r s ¡r sra:
+	       -  Faktori lis sz m¡t¢ elj r s k‚sz¡t‚se.
+	       -  K”r terlet ‚s kerlet sz m¡t¢ elj r s k‚sz¡t‚se a sugar
+		  bemen“ ‚rt‚k‚vel.
+	       -  H romsz”g terlet sz m¡t¢ elj r s a 3 oldalb¢l.
+		  (Term‚szetesen ellen“rz‚ssel, felhaszn lhat¢k az el“z“ ¢r kon
+		  m r megirt programok)
+	       -  n alatt k kisz m¡t sa a faktori lis elj r s haszn lat val.
+		  [(n alatt k) = n! / ( n! * (n-k)!)]

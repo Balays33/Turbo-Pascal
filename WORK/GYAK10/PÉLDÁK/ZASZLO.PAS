@@ -1,0 +1,33 @@
+program zaszlo;
+uses crt,graph;
+const
+    haromsz : Array[1..4] Of PointType =
+     ( ( x:10;y:10 ),
+     ( x:70;y:100 ),
+     ( x:10;y:190 ),
+     ( x:10;y:10 ) );
+    csillag : array[1..5] of pointtype=
+    ((x:100;y:90),(x:90;y:120),(x:115;y:100),(x:85;y:100),(x:110;y:120));
+    cs2 :array[1..5] of pointtype=
+    ((x:145;y:90),(x:135;y:120),(x:160;y:100),(x:130;y:100),(x:155;y:120));
+var c,gd,gm,x1,x2,y1,y2:integer;
+begin;
+  clrscr;
+  x1:=10;x2:=210;y1:=10;y2:=190;
+  detectgraph(gd,gm);
+  filemode:=0;
+  initgraph(gd,gm,'e:\tp\bgi');
+  setfillstyle(1,green);
+  bar(x1,y1,x2,y2);
+  setfillstyle(1,yellow);
+  bar(10,70,210,130);
+  setfillstyle(1,red);
+  fillpoly(4,haromsz);
+  setfillstyle(1,black);
+  fillpoly(5,csillag);
+  fillpoly(5,cs2);
+
+readln;
+
+end.
+

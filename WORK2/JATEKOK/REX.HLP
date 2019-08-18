@@ -1,0 +1,37 @@
+                                  Rex j t‚k
+
+A j t‚k szab lyai:
+
+A j t‚k szab lyai n‚mik‚pp elt‚rnek a val¢di szab lyokt¢l. Itt a j t‚kot k‚t
+szem‚ly j tszhatja, hagyom nyos rexasztalon, ”t goly¢val. A rexasztal olyan
+asztal, amelyen meghat rozott helyeken ”sszesen nyolc lyuk van, amelyekhez
+egy-egy ‚rt‚k tartozik. A j t‚kban szerepl“ ”t goly¢ k”zl egy piros, a t”bbi
+pedig feh‚r. A j t‚k l‚nyege, hogy egy adott helyre kitett goly¢t £gy l”kjnk
+meg, hogy az az asztalon lev“ goly¢k valamelyik‚nek nekitk”zz”n, ‚s ezut n
+valamelyik goly¢ valamelyik lyukba beleessen. Minden lyukba esett goly¢ annyi
+pontot ‚r, amennyi a lyukhoz tartoz¢ ‚rt‚k, illetve ha a piros goly¢ esik a
+lyukba akkor a lyukhoz tartoz¢ ‚rt‚k k‚tszeres‚t.
+
+A j t‚k sor n mindaddig ugyanaz a j t‚kos k”vetkezik, ameddig az  ltala meg-
+l”k”tt goly¢ hat s ra valamelyik goly¢ tk”z‚s ut n lyukba esik. A sorozat 
+alatt szerzett pontok ”sszead¢dnak. Ha a j t‚kos  ltal megl”k”tt goly¢ neki-
+tk”zik ugyan egy m siknak, de egyik goly¢ sem esik lyukba, akkor a j t‚kos 
+sorozata ‚rv‚nyesen ‚rt v‚get, a sorozat alatt szerzett pontokat az addigi 
+pontjaihoz adhatja. Ha azonban a megl”k”tt goly¢ nem tk”zik neki egy goly¢-
+nak sem, akkor a j t‚kos sorozata ‚rv‚nytelen,a sorozat alatt szerzett pon-
+tok elvesznek. Ak r ‚rv‚nyesen, ak r ‚rv‚nytelenl ‚r v‚get a sorozat, a 
+m sik j t‚kos k”vetkezik. A j t‚k l‚nyeges szerepl“je az asztal k”zep‚n 
+ ll¢ gomba. Ha ezt valamelyik j t‚kos felbor¡tja, akkor annak addig megszer- 
+zett pontjai elvesznek, tov bb  az asztalr¢l le kell venni az ”sszes goly¢t, 
+‚s a j t‚kot a kiindul¢ helyzetb“l kell folytatni.
+
+
+A j t‚k haszn lata:
+
+A goly¢t automatikusan rakja a sz m¡t¢g‚p az asztalra. A l”k‚s ir ny t (a-
+ melyet a d k¢ ir nya mutat) a v¡zszintes kurzormozgat¢ billenty–kkel lehet
+ be ll¡tani, a goly¢ kezd“sebess‚g‚t pedig (amelyet a d k¢ goly¢t¢l val¢ t -
+ vols ga jelez) a fgg“leges kurzormozgat¢ billenty–kkel. A be ll¡t s ut n
+ a goly¢t az "Enter" let‚s‚vel l”kjk el. A j t‚k az "Esc" billenty– let‚-
+ s‚vel b rmikor megszak¡that¢.
+

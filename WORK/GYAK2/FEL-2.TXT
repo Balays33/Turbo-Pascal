@@ -1,0 +1,46 @@
+GYAK2	 
+         1. èrnyÇkos ablak kÇsz°tÇse, szîveg °r†s†nak v†ltoztat†sa,
+            hangad†s. (ABLAK1.PAS)
+
+	 2. A kÇpernyì nÇgy rÇszre osztva, kÅlînbîzì sz°nekkel 
+            befestve Çs bele°rva, hogy melyik h†nyadik negyed.(ABLAK2.PAS)
+
+	 3. Ablakmñveletek gyakorl†sa: nagy betñkkel ki°rva a 'MENö' sz¢.
+            (ABLAK3.PAS)
+
+	 4. Keretes ablakok rajzol†sa Çs a 'HELLO' sz¢ villogtat†sa.
+            (ABLAK4.PAS)
+
+	 5. Fì†tl¢ mentÇn kÅlînbîzì sz°nñ, tetszìleges sz†m£ ablak 
+            rajzol†sa. (ABLAK5.PAS)
+
+	 6. Piros h†tÇrrel nÇgy egyforma kÇk ablak rajzol†sa.  
+            (ABLAK6.PAS)
+
+	 7. èrnyÇkos ablak rajzol†sa Çs bele°r†sa, hogy 'Zseni BÇla'.
+            (ABLAK7.PAS)
+
+	 8. Henger tÇrfogat†t, felsz°nÇt sz†mol¢ program eredmÇnyeinek 
+            ki°rat†sa ablakok seg°tsÇgÇvel.               (ABLAK8.PAS)
+
+	 9. 'Boci-boci tarka' kezdetñ gyermekn¢ta megsz¢laltat†sa.
+            (BOCI.PAS)
+
+	10. Gotoxy elj†r†s haszn†lat†nak gyakorl†sa.    (GOTO.PAS)
+
+	11. 'Hello' villogtat†sa.                     (VILLOG.PAS)
+
+	12. H†rom sz†m beolvas†sa. Ki°ratni az †tlagukat, a 
+            legnagyobbat Çs nîvekvì sorba rendezve.        (IF1.PAS)
+
+	13. 20 Çs 60 kîzÇ esì p†ros sz†m beolvas†sa. Ha nem megfelelì 
+            a sz†m, akkor hibaÅzenet ki°r†sa.               (IF2.PAS)
+
+	14. If-es pÇld†k: - p†ros-p†ratlan vizsg†lata
+	 		  - szîkìÇv vizsg†lata
+			  - h†romszîg szerkeszthetìsÇgÇnek vizsg†lata 
+                            (kerÅlet sz†mol†ssal)
+			  - be°rt d†tum val¢dis†g†nak vizsg†lata
+			  - h†rom sz†m kîzÅl a legnagyobb 
+                                                     (IF3.PAS)
+

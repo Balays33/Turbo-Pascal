@@ -1,0 +1,28 @@
+                                Mem¢ria j t‚k
+
+A j t‚k szab lyai:
+
+A j t‚kot k‚t szem‚ly j tszhatja, 56 kis k rty val, amely k rty k mindegyik‚n
+egy sz¢ szerepel, az 56 k rty n ”sszesen 28 sz¢. Igy minden egyes sz¢ pontosan
+k‚t k rty n tal lhat¢ meg. A j t‚k kezdetekor ezt az 56 k rty t kirakjuk,
+m‚gpedig £gy, hogy a rajta lev“ sz“ nem l tszik. Ezut n az els“ j t‚kos
+megn‚z k‚t k rty t. Ha a rajtuk lev“ szavak megegyeznek, akkor az illet“
+nyert egy pontot ‚s ism‚t “ n‚zhet meg egy p rt, ellenkez“ esetben viszont
+az ellenf‚l k”vetkezik. A j t‚k akkor ‚r v‚get, ha az egyik j t‚kos el‚ri a
+100 pontot.
+A j t‚kprogram kialak¡t sa olyan, hogy egy p r eltal l sa ut n azokat a
+k rty kat, amelyeket m‚g senki nem n‚zett meg, a sz m¡t¢g‚p ism‚t ”sszekeveri,
+¡gy ha valaki eltal lt egy p rt, ut na a p r hely‚n nem p rt tal l.
+
+
+A j t‚k haszn lata:
+
+A k rty k megn‚z‚s‚hez bal fels“ sarokban megjelen“ villog¢ csillagot kell a
+ kiv lasztott k rtya f”l‚ vinni, ‚s ott megnyomni az "Enter"-t. A villog¢
+ csillag ekkor folyamatosan vil g¡tani fog, ‚s megjelenik a jobb als¢ sarok-
+ ban a m sik csillag. Ezzel a csillaggal kijel”lhetjk a m sik k rty t, ‚s a
+ k‚t k rty t egyszerre fogja a sz m¡t¢g‚p megmutatni. A villog¢ csillagot a
+ kurzormozgat¢ billenty–kkel lehet mozgatni. Ha a m sodik csillagot az els“
+ f”l‚ visszk ‚s ott tjk le az "Enter"-t akkor az els“ k rtya kijel”l‚s‚t
+ t”r”ljk.
+

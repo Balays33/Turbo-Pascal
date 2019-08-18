@@ -1,0 +1,81 @@
+
+
+
+
+                                Varga M†rton
+
+
+
+              J†tÇkprogramok kÇsz°tÇse Pascal Çs Assembly nyelven
+
+
+                          c°mñ kînyv lemezmellÇklete
+
+
+
+
+
+
+
+
+
+
+                     A lemezmellÇklet tartalma:
+
+
+               UNIT      -  a kînyvben haszn†lt unitok
+               BOBEDIT   -  BOB-Editor program
+               EXAMPLE   -  pÇldaprogram
+               FEJEZET1  -  az alaelemek bemutat†sa
+               FEJEZET2  -  BOB-ok megjelen°tÇse
+               FEJEZET3  -  billentyñzet Çs az egÇr kezelÇse
+               FEJEZET4  -  a h†ttÇr megjelen°tÇse
+               FEJEZET5  -  ÅtkîzÇsek kezelÇse
+               FEJEZET6  -  a BOB-Editor le°r†sa
+               FEJEZET7  -  a MAP-Editor ismertetÇse
+               FEJEZET8  -  a Game unit haszn†lat†nak bemutat†sa
+               FEJEZET9  -  pÇlda j†tÇkprogram
+               MAPEDIT   -  MAP-Editor program
+               TANK      -  a TANK j†tÇkprogram
+
+
+
+
+
+
+             A tÇm†val kapcsolatos m†s ComputerBooks kînyvek:
+             ------------------------------------------------
+
+
+             Programozzunk Turbo Pascal nyelven!
+
+
+             PerifÇri†k programoz†sa
+
+
+             VGA k†rtya programoz†sa - Pascal Çs Assembly nyelven
+
+
+             Hangk†rty†k programoz†sa - Pascal Çs Assembly nyelven
+
+
+
+
+
+
+                                 KÇrje a
+
+                           COMPUTERBOOKS kiad¢
+
+                          ingyenes katal¢gus†t!
+
+
+
+                   ComputerBooks Kft.
+                   1126. Budapest, Tartsay Vilmos u. 12.
+                      LevÇlc°m : 1253 Budapest, Pf. 71.
+                      Telefon  : 3751-564, 3753-591
+                      Fax      : 3753-591
+                      FaxBank  : 2-333-666/1456#
+                      E-mail   : info@computerbooks.hu
+                      WEB      : www.computerbooks.hu

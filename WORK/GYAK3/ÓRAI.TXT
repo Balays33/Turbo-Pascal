@@ -1,0 +1,22 @@
+GYAK3	
+
+	1. Örassa ki a h romf‚le ciklus felhaszn l s val 1-t‹l 100-ig a sz mokat, 
+	   el‹sz”r egyes‚vel, majd ”t”s‚vel £gy, 10 db legyen egy sorban!
+	2. Örassson ki a k‚perny‹re egy sorhossznyi csillagot,
+		- az els‹ sorba,
+		- bek‚rt sorsz m£ sorba,
+		- a sorsz mot akkor fogadja el, ha 1 ‚s 25 k”z”tti!
+	3. Sz m¡tsa ki egy bek‚rt sz m faktori lis t! (n!=1*2*3*...*n)
+	4. Olvasson be billentyûzetr‹l N db sz mot £gy, hogy az N ‚rt‚k‚t is 
+	   k‚rje be! Örassa ki az ”sszegket ‚s az  tlagukat!
+	5. K‚sz¡tsen egy olyan hatv nyt bl zatot, amelyben az alap beolvasott 
+	   ‚rt‚kû, a kitev‹ pedig 0-t¢l 10-ig v ltozik! (x az y.-on=exp(y*ln(x)))
+	   A t bl zat form ja pl. x=2 eset‚n a k”vetkez‹ legyen:
+
+		alap		kitev‹		hatv ny‚rt‚k
+	     ____________________________________________________
+
+		2		  0		      1
+		2		  1		      2
+		.		  .		      .
+

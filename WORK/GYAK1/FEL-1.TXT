@@ -1,0 +1,10 @@
+GYAK1  1. Div, mod, and, or, shr, shl elj r sok gyakorl sa.
+	  (H¡v si m¢d, eredm‚ny.) (elj_fv1.pas)
+       2. Div, mod, shl, succ, pred, ord, pos, insert, sqr, sqrt, frac,
+	  and, or, not, true, false elj r sok gyakorl sa. (elj_fv2.pas)
+       3. K‚sz¡tsen hatv nysz mol¢ programot! (hatvany.pas)
+       4. K‚rje be egy henger sugar t ‚s magass g t. Sz molja ki a
+	  felsz¡n‚t ‚s t‚rfogat t! (henger.pas)
+       5. Kl”nb”z“ mez“sz‚less‚gek ki¡r s nak gyakorl sa. (mezo1,4.pas)
+       6. Pascal program szerkezete egy egyszerû p‚ld n keresztl.
+	  (prszerk.pas)

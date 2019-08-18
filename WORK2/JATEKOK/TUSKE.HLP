@@ -1,0 +1,22 @@
+                                 Tske j t‚k
+
+A j t‚k szab lyai:
+
+A j t‚kot egy szem‚ly j tszhatja egy ”sszesen 45 mez“b“l  ll¢ t bl n. A 
+mez“k 3x3-as csoportokban, kereszt alakban helyezkednek el. A t bl n a j t‚k
+kezdetekor 44 b bu (tske) van, £gy, hogy a k”z‚ps“ mez“ resen marad. A
+j t‚k sor n valamelyik b buval  tugorhatjuk a b bu n‚gy szomsz‚dj nak
+valamelyik‚t, amennyiben az  tugrani k¡v nt b bu m sik oldal n res mez“ van.
+Az ¡gy  tugrott b but a t bl r¢l le kell venni. A j t‚k c‚lja az, hogy a
+t bl n min‚l kevesebb b bu maradjon.
+
+
+A j t‚k haszn lata:
+
+A j t‚k kezdetekor a k”z‚ps“ hely alatt egy kis ny¡l l that¢. Ezt a nyilat
+ a kurzormozgat¢ billenty–kkel a kiv lasztott b bu al  kell vinni majd az
+ "Enter" let‚s‚vel a b but kijel”lni. Ezut n ugyan¡gy ki kell jel”lni azt
+ a mez“t amelyikre a b buval ugrani akarunk. Ha az ugr sra kijel”lt b bura
+ ism‚t r visszk a nyilat, ‚s ism‚t megnyomjuk az "Enter"-t akkor a b bu ki-
+ jel”l‚se t”rl“dik. A j t‚k az "Esc" billenty– let‚s‚vel b rmikor megsza-
+ k¡that¢.

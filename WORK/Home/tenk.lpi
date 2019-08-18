@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="3"/>
+    <General>
+      <ProjectType Value="Program"/>
+      <MainUnit Value="0"/>
+      <ActiveEditorIndexAtStart Value="1"/>
+      <IconPath Value="./"/>
+      <TargetFileExt Value=""/>
+      <Title Value="tenk"/>
+    </General>
+    <JumpHistory Count="1" HistoryIndex="0">
+      <Position1>
+        <Filename Value="tenk.pas"/>
+        <Caret Line="303" Column="5" TopLine="284"/>
+      </Position1>
+    </JumpHistory>
+    <Units Count="2">
+      <Unit0>
+        <CursorPos X="22" Y="2"/>
+        <EditorIndex Value="0"/>
+        <Filename Value="tenk.pas"/>
+        <IsPartOfProject Value="True"/>
+        <Loaded Value="True"/>
+        <TopLine Value="1"/>
+        <UnitName Value="Tenk"/>
+        <UsageCount Value="20"/>
+      </Unit0>
+      <Unit1>
+        <CursorPos X="14" Y="1"/>
+        <EditorIndex Value="1"/>
+        <Filename Value="szamolas.pas"/>
+        <IsPartOfProject Value="True"/>
+        <Loaded Value="True"/>
+        <TopLine Value="1"/>
+        <UnitName Value="szamolas"/>
+        <UsageCount Value="20"/>
+      </Unit1>
+    </Units>
+    <PublishOptions>
+      <Version Value="2"/>
+      <IgnoreBinaries Value="False"/>
+      <IncludeFileFilter Value="*.(pas|pp|inc|lfm|lpr|lrs|lpi|lpk|sh|xml)"/>
+      <ExcludeFileFilter Value="*.(bak|ppu|ppw|o|so);*~;backup"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+        <LaunchingApplication PathPlusParams="/usr/X11R6/bin/xterm -T 'Lazarus Run Output' -e $(LazarusDir)/tools/runwait.sh $(TargetCmdLine)"/>
+      </local>
+    </RunParams>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Other>
+      <CompilerPath Value="$(CompPath)"/>
+    </Other>
+  </CompilerOptions>
+</CONFIG>

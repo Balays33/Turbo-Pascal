@@ -1,0 +1,42 @@
+Feladatok a m trixok k”r‚b‹l:
+
+  1. K‚rje be £gy az elemeket, hogy ne egym s alatt ¡rja ki a k‚perny“re,
+     hanem mindig ugyanott legyen a k‚rd‚s.		  (BEKER.PAS)
+
+  2. A bek‚rt elemek -20 ‚s 20 k”z‚ essenek!
+     Ellen‹rizze a be¡rt sz mokat, megfelelnek-e  k¡v nalomnak!
+     Ha nem, ¡rjon hibajelz‚st ‚s k‚rje £jb¢l az elemet!  (BE_ELL.PAS)
+
+  3. Az oszlopok al  ¡rja ki az oszlop ”sszegeket!	  (OSZL_SUM.PAS)
+     Ha az ”sszeg 20-n l nagyobb ¡rja k‚kkel, kl”nben z”lddel!
+
+  4. Keresse meg egy vektorban a maxim lis elemet! ¡rja ki az index‚t ‚s
+     az ‚rt‚k‚t!					  (MAXKER.PAS)
+
+  5. Keresse meg a m trixban a minim lis ‚s a maxim lis elemet! Irja ki
+     az indexket ‚s az ‚rt‚kket! Majd ¡rassa ki  a  m trixot	£jra ‚s
+     szinezze ki  ezeket az elemeket!			  (MAX_IND.PAS)
+
+  6. Egy 5*5-”s v‚letlenszer–en felt”lt”tt m trixot tkr”zz”n a f‹ tl¢ra!
+							  (TUKROZ.PAS)
+
+  7. Cser‚lje fel a m trix k‚t oszlop nak elemeit! A program k‚rje be,
+     hogy melyik oszlopok legyenek felcser‚lve. 	  (OSZLCSER.PAS)
+
+  8. Egy m trix sorainak ”sszeg‚t ¡rassa ki a sor ut n!   (SOR_SUM)
+
+  9. Sz¡nezze  t a 3-mal oszthat¢ elemeket!		  (OSZTHATO.PAS)
+
+ 10. K‚rje be, hogy melyik sort ¡rjuk  t egy vektorba!
+     Irassa ki a vektort is!				  (VEKT_IR.PAS)
+
+ 11. T”ltse fel egy m trix elemeit v‚letlenszeren, -15 ‚s 25 k”z‚ es“
+     sz mokkal! Sz molja meg h ny darab z‚ro, pozit¡v ‚s negat¡v elem
+     van!  rja ki a darabsz mot ‚s sz¡nezze  t mindegyik f‚l‚t  m s
+     sz¡nre a m trixban!				  (POZ_NEG.PAS)
+
+
+
+
+
+

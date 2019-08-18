@@ -1,0 +1,30 @@
+Program Jane;
+   uses crt;
+   var a,b,c:real;
+           x:char;
+    Begin
+      clrscr;
+      textbackground(0);
+      clrscr;
+      textcolor(2);
+      textbackground(9);
+      window(1,1,24,6);
+      write('1 sz mot nyomsz +       ');
+      write('2 sz mot nyomsz -       ');
+      write('3 sz mot nyomsz *       ');
+      write('4 sz mot nyomsz /       ');
+      textcolor(0);
+      textbackground(18);
+      window(25,1,80,3);
+      write(' A SZµMOLà PROGRAM                                      ');
+      textcolor(2);
+      textbackground(45);
+      window(20,3,60,6);
+      write('K‚rem az egyik sz mot A: ');
+      readln(a);
+      write('K‚rem az m sik sz mot B: ');
+      readln(b);
+      c:=a+b;
+      write('Az eredm‚ny ',c:6:3,'');
+      readln;
+    End.

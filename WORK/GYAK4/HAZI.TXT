@@ -1,0 +1,29 @@
+ 
+     H zi Feladat!
+  ~~~~~~~~~~~~~~~~~~
+    Mindenki v lasszon a modul£tmutat¢b¢l egy m trixos feladatot.
+    A feladat form ja ‚s fut s nak menete:
+    	- a feladat ismertet‚se ‚s a k‚sz¡t‹ nev‚nek megjelen¡t‚se;
+	- adatbek‚r‚s ellen‹rz‚ssel;
+	- a felt”lt‚s m¢dj nak megv laszt sa (g‚pi vagy k‚zi);
+	- beolvastatni, hogy a m trix elemei milyen intervallumba essenek 
+	  (k‚zi felt”lt‚s eset‚n a beolvas s ellen‹rz‚ssel t”rt‚njen, 
+	  automatikus felt”lt‚s eset‚n a v‚letlensz mokat ¡gy gener lja);
+
+    Mag t a feladatot a m trixon igyekezzen szeml‚letesen megoldani,
+    az eredm‚nyt ¡rassa ki.
+
+    Bead s h l¢zaton keresztl a 6.h‚ten. 
+    A beadott f jln‚v a k”vetkez“ legyen: h1nnxeee.pas
+      	ahol a h1 k”telez“;
+      	az nn a napot jelenti,(h‚tf“ kedd...) amikor ¢r ja van;
+      	az x az ¢r t a k”vetkez‹ szerint: 8-t¢l 1, 
+					  10-t“l 2 stb.,
+      	az eee a monogram.
+    		Pl.: Ha valaki szerd n 10-t“l j r ¢r ra : h1sz2kl.pas
+                	       cst”rt”k”n 18-t¢l:        h1cs7kl.pas
+
+
+   Ig‚ny szerint ett‹l elt‚r‹ feladat is k‚sz¡thet‹, de ebben az esetben a 
+   gyakorlatvezet‹vel egyeztettni szks‚ges.
+   

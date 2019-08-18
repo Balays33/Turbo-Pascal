@@ -1,0 +1,32 @@
+
+ 1. Deklar ljon egy 10 elemû V vektort! T”ltse fel billentyûzetr‹l a vektort 
+    £gy, hogy el‹tte az elemsz mot beolvastatja!
+    Örassa ki a kapott vektort!
+
+ 2. Deklar ljon egy 10 elemû V vektort! T”ltse fel v‚letlenszerûen -25 ‚s 25 
+    k”z”tti sz mokkal!
+    Örassa ki a kapott vektort!
+
+ 3. Az el‹z‹ k‚t feladatot ”tv”zze egybe £gy, hogy a program megk‚rdezze, 
+    hogy milyen m¢don t”ltsk fel a vektort!
+
+ 4. A 2. feladat b‹v¡t‚se:
+	- sz molja meg a pozit¡v elemek sz m t;
+	- a negat¡vokat m s sz¡nnel ¡rassa ki, mint a t”bbit;
+	- sz m¡tsa ki a vektor elemeinek ”sszeg‚t;
+	- keresse meg a maxim lis elemet, ‚s ¡rassa ki az ‚rt‚k‚t ‚s index‚t!
+
+ 5. A 3. feladatot ism‚telje meg NxM-es m trix eset‚n! (Deklar ljon egy 
+    10x10 t”mb”t, de a val¢di m‚ret‚t billentyûzetr‹l olvastassa be!)
+
+ 6. A m trix minden sor nak v‚g‚re ¡rassa ki, hogy a sorban van-e nulla elem 
+    vagy nincs!
+
+ 7. Cser‚lje fel a m trix 3. ‚s 5. oszlop t, ‚s ¡rassa ki a kapott m trixot is!
+
+ 8. Az ”ttel oszthat¢ elemeket sz¡nezze a t”bbit‹l kl”nb”z‹ sz¡nûre!
+
+ 9. M solja ki egy vektorba a m trix 2. sor nak elemeit, majd ¡rassa ki a 
+    vektort!
+
+10. Sz molja meg h nyszor szerepel a m trix elemei k”z”tt a 0!

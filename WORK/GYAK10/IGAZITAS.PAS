@@ -1,0 +1,46 @@
+uses crt,graph;
+var gd,gm:integer;
+begin
+ gd:=detect;
+ filemode:=0;
+ initgraph(gd,gm,'e:\tp\bgi');
+ cleardevice;
+
+ line(10,100,600,100);
+ settextjustify(0,0);
+ setcolor(5);
+ outtextxy(10,100,'J¢ reggelt!     igazit s: 0,0 ');
+
+ line(10,200,600,200);
+ settextjustify(0,1);
+ setcolor(2);
+ outtextxy(10,200,'J¢ napot!        igazit s:0,1');
+
+ line(10,300,600,300);
+ settextjustify(0,2);
+ setcolor(1);
+ outtextxy(10,300,'J¢ est‚t!        igazit s 0,2');
+
+ line(400,10,400,450);
+
+ settextjustify(0,0);
+ setcolor(1);
+ outtextxy(400,100,'El“re!');   outtextxy(500,100,' igazit s 0,0');
+
+ settextjustify(1,0);
+ setcolor(3);
+ outtextxy(400,200,'K”z‚pre!');
+ settextjustify(0,0);
+ outtextxy(500,200,' igazit s 1,0');
+
+ settextjustify(2,0);
+ setcolor(3);
+ outtextxy(400,300,'H tra!');
+ settextjustify(0,0);
+ outtextxy(500,300,' igazit s 2,0');
+
+
+
+ readkey;
+ closegraph;
+end.

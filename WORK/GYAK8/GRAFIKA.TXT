@@ -1,0 +1,166 @@
+Kîr°v
+        ARC(x,y,a,b,r);
+
+        x : oszlop koordin†ta
+        y : sor koordin†ta
+        a : szîgtartom†ny kezdete (fokban) (0-360)
+        b : szîgtartom†ny vÇge (fokban)    (0-360)
+        r : sug†r
+
+Kîr
+        CIRCLE(x,y,r);
+
+        x : oszlop koordin†ta
+        y : sor koordin†ta
+        r : sug†r
+
+TÇglalap
+        RECTANGLE(x1,y1,x2,y2);
+
+        x1 : bal felsì sarok oszlop koordin†t†ja
+        y1 : bal felsì sarok sor koordin†t†ja
+        x2 : jobb als¢ sarok oszlop koordin†t†ja
+        y2 : jobb als¢ sarok sor koordin†t†ja
+
+Kitîltîtt tÇglalap
+        BAR(x1,y1,x2,y2);
+
+        x1 : bal felsì sarok oszlop koordin†t†ja
+        y1 : bal felsì sarok sor koordin†t†ja
+        x2 : jobb als¢ sarok oszlop koordin†t†ja
+        y2 : jobb als¢ sarok sor koordin†t†ja
+
+TÇglatest
+        BAR3D(x1,y1,x2,y2,m,b);
+
+        x1 : bal felsì sarok oszlop koordin†t†ja
+        y1 : bal felsì sarok sor koordin†t†ja
+        x2 : jobb als¢ sarok oszlop koordin†t†ja
+        y2 : jobb als¢ sarok sor koordin†t†ja
+        m  : tÇglatest mÇlysÇge (kÇppontokban)
+        b  : true - ha megrajzolja a tÇglatest felsì ÇlÇt is
+             false - ha nem
+
+KÇpernyìtîrlÇs
+        CLEARDEVICE;
+
+Sokszîg
+        DRAWPOLLY(p,pontok);
+
+        p      : poligon cs£cspontjainak sz†ma
+        pontok : cs£cspontok koordin†t†i
+
+Kitîltîtt sokszîg
+        FILLPOLLY(p,pontok);
+
+        p      : poligon cs£cspontjainak sz†ma
+        pontok : cs£cspontok koordin†t†i
+
+Ellipszis
+        ELLIPSE(x,y,a,b,rx,ry);
+
+        x : oszlop koordin†ta
+        y : sor koordin†ta
+        a : szîgtartom†ny kezdete (fokban) (0-360)
+        b : szîgtartom†ny vÇge (fokban)    (0-360)
+        rx: v°zszintes ir†ny£ sug†r
+        ry: fÅggìleges ir†ny£ sug†r
+
+Kitîltîtt ellipszis
+        FILLELLIPSE(x,y,rx,ry);
+
+        x : oszlop koordin†ta
+        y : sor koordin†ta
+        rx: v°zszintes ir†ny£ sug†r
+        ry: fÅggìleges ir†ny£ sug†r
+
+KitîltÇs
+        FLOODFILL(x,y,szin);
+
+        x    : oszlop koordin†ta
+        y    : sor koordin†ta
+        szin : kitîltendã alakzat kîrvonal†nak sz°ne
+
+KÇpernyì maxim†lis koordin†ta-ÇrtÇkeinek lekÇrdezÇse
+        maxx=GETMAXX;
+        maxy=GETMAXY;
+
+Aktu†lis kÇppont helyÇnek lekÇrdezÇse
+        x=GETX;
+        y=GETY;
+
+Vonal
+        LINE(x1,y1,x2,y2);
+
+        x1 : vonal kezdìpontj†nak oszlop koordin†t†ja
+        y1 : vonal kezdìpontj†nak sor koordin†t†ja
+        x2 : vonal vÇgpontj†nak oszlop koordin†t†ja
+        y2 : vonal vÇgpontj†nak sor koordin†t†ja
+
+Szakasz
+        LINEREL(dx,dy);
+
+        dx : x ir†ny£ eltol†s ÇrtÇke
+        dy : y ir†ny£ eltol†s ÇrtÇke
+
+        LINETO(x,y);
+
+        x : vonal vÇgpontj†nak oszlop koordin†t†ja
+        y : vonal vÇgpontj†nak sor koordin†t†ja
+
+KÇppont helyÇnek megv†ltoztat†sa
+        MOVEREL(dx,dy);
+
+        dx : x ir†ny£ eltol†s ÇrtÇke
+        dy : y ir†ny£ eltol†s ÇrtÇke
+
+        MOVETO(x,y);
+
+        x : oszlop koordin†ta
+        y : sor koordin†ta
+
+Szîveg ki°rat†sa
+        OUTTEXT(szoveg);
+
+        OUTTEXTXY(x,y,szoveg);
+
+        x : oszlop koordin†ta
+        y : sor koordin†ta
+
+Kîrszelet
+        PIESLICE(x,y,a,b,r);
+
+        x : oszlop koordin†ta
+        y : sor koordin†ta
+        a : szîgtartom†ny kezdete (fokban) (0-360)
+        b : szîgtartom†ny vÇge (fokban)    (0-360)
+        r : sug†r
+
+KÇppont
+        PUTPIXEL(x,y,szin);
+
+        x : oszlop koordin†ta
+        y : sor koordin†ta
+
+H†ttÇrsz°n
+        SETBKCOLOR(szin);
+
+ElìtÇrsz°n
+        SETCOLOR(szin);
+
+KitîltÇsi minta
+        SETFILLSTYLE(tipus,szin);
+
+Vonalst°lus
+        SETLINESTYLE(stilus, minta,vastags†g);
+
+Szîveg poz°cion†l†sa
+        SETTEXTJUSTIFY(v,f);
+
+Szîveg st°lusa
+        SETTEXTSTYLE(betñt°pus,ir†ny,betñmagass†g);
+
+KÇppont sz°nÇnek lekÇrdezÇse
+        szin=GETPIXEL(x,y);
+        x : oszlop koordin†ta
+        y : sor koordin†ta

@@ -1,0 +1,59 @@
+GYAK3	
+
+        1. Sz¡nes utak rajzol sa ‚s k‚perny“ sz‚l‚t ‚rve sz¡nv lt s.
+           (v‚ge:v)                                   (CASEIF.PAS)
+
+	2. Ciklusos p‚ld k: - els“ 100 sz m ”sszege
+			    - els“ N sz m n‚gyzet”sszege
+			    - x els“ 10 hatv nya
+			    - sz mok ki¡rat sa 15-t“l 200-ig 15-”s‚vel
+			    - sorhossznyi csillag ki¡rat sa
+			    - megadott karakterrel X rajzol sa a 
+                              k‚perny“re
+			    - fokok k”zti  tv lt s(Celsius, Fahrenheit,
+                              Reaumur, Kelvin)	          (CIKLUS1.PAS)
+
+	3. Ciklusos p‚ld k: - els“ 100 sz m  tlaga
+			    - bek‚rt sz mok  tlaga
+			    - faktori lis sz mol sa
+			    - sz mok ki¡rat sa 5-t“l 500-ig 5-”s‚vel
+			    - ki¡rat s £gy, hogy 10 db egy sorban
+			    - bek‚rt sz mig ki¡rat s, egy sorban 10 db 
+                                                     (CIKLUS2.PAS)
+
+	4. Ciklusos p‚ld k: - bek‚rt sz m n‚gyzet”sszege
+			    - bek‚rt sz m i-dik hatv nya
+			    - 2 hatv nyai a 10.-ig
+			    - sz mok ki¡r sa 5-‚vel oszlopokban 
+                                                     (CIKLUS3.PAS)
+
+	5. N‚gyzetgy”k t bl zat k‚sz¡t‚se.           (GYOKVON.PAS)
+
+        6. A m sodfok£ egyenlet gy”keinek kisz m¡t sa. (MEGOLDO.PAS)
+
+        7. T¡z db beolvasott sz m  tlaga kl”nb”z‹ ciklusokkal.
+                                                       (CIKLUS4.PAS)
+    Tov bbi gyakorl¢ p‚ld k:
+
+	1. Olvasson be a k‚perny‹ 12. sor nak 40. oszlop t¢l kezdve egy sz mot. 
+	   A sz mot csak akkor fogadja el, ha teljeslnek a k”vetkez‹ felt‚telek:
+		- a sz m vagy kisebb, mint 1000, vagy nagyobb, mint 3000;
+		- a sz m eg‚sz, p ros ‚s h‚ttel nem oszthat¢.
+	   Ha a sz m nem megfelel‹, a program £j sz mot k‚rjen.
+	2. Olvasson be pozit¡v eg‚sz sz mokat 0 v‚gjelig! Irja ki a sz mok 
+	   sz m t, a sz mok  tlag t, a beolvasott legkisebb ‚s legnagyobb sz mot!
+	3. Örja ki az 1 k”bm‚tern‚l kisebb t‚rfogat£, 10 cm-enk‚nt n”vekv‹ 
+	   sugar£ g”mb”k t‚rfogatait!
+	4. Örja ki az angol ABC ”ssszes nagybetûj‚t n”vekv‹, majd cs”kken‹ 
+	   sorrendben!
+	5. Olvasson be k‚t egy‚sz sz mot, A-t ‚s B-t! Örja ki a k‚t sz m k”zti
+	   abszol£t elt‚r‚st; irja ki a kett‹ k”z‚ es‹ p ros sz mokat;  llap¡tsa 
+	   meg, a k‚t sz m sorrendis‚g‚t (cs”kken‹, n”vekv‹, egyforma); ¡rja ki 
+ 	   a k‚t sz m k”zl a kisebbet! Ha rajzolhat¢ a k‚perny‹re egy A*B 
+	   m‚retû t”m”r t‚glalap, akkor rajzolja meg!
+	6. A k‚perny‹ alapsz¡ne legyen k‚k! A k‚perny‹ k”zep‚n egy vil gosszrke 
+	   t‚glalapban feket‚vel ¡rjon ki k‚t v‚letlen sz mot, az egyik 0 ‚s 20,
+	   a m sik 5 ‚s 15 k”z”tt legyen! K‚rje be a k‚t sz m szorzat t! Ha j¢ a 
+	   sz m ¡rassa ki z”lddel, hogy 'J¢', egy‚bk‚nt pirossal, hogy 'Rossz'! 
+	   A fentieket ism‚telje meg 10-szer, a v‚g‚n ¡rassa ki a j¢ v laszok
+	   sz m t!

@@ -1,0 +1,50 @@
+Egy rendez‚si elj r s kipr¢b l sa (el‹ad s anyag nak felhaszn l s val)
+
+Sztringes feladatok:
+
+   1. Be¡rt karakter k¢dj nak megad sa, el‹z‹ ‚s k”vetkez‹ karakter kiirat sa,
+      karakter t¡pus nak megad sa(nagybetû, kisbetû stb.)      (ASCIIKAR.PAS)
+   2. Sz”vegben nagybetûk  t¡r sa kisbetûv‚.                   (KISBETU.PAS)
+   3. Bek‚rt sz”veg adott sorsz m£ karakter‚t‹l t”rl‚s.        (S_TOROL.PAS)
+   4. Sz”vegben sz¢k”z”k helyett 0-k irat sa.                  (S_POS.PAS)
+   5. Bek‚rt sz”veg hossz nak megad sa ‚s sz”veg kiirat sa ford¡tva.
+   							       (S_HOSSZ.PAS)
+   6. Bek‚rt sz”veg 'szaladg ltat sa' a k‚perny‹n.             (KEPUJSAG.PAS)
+   7. 'Informatika' ‚s 'sz m¡t stechnika' szavak kiirat sa ‚rdekes form tumban.
+						   (INFORMAT.PAS, STRING1.PAS)
+   8. Bek‚rt sz”veg hossz nak megad sa, az els‹ ‚s utols¢ 4 karakter‚nek 
+      egyttes kiirat sa, minden karakter ut n 'e irat sa'.    (STRING2.PAS)
+
+Gyakorl¢ feladatok:
+
+     Egys‚gm trix k‚sz¡t‚s;
+     Ritkam trix k‚sz¡t‚s;
+     V‚gjelig val¢ beolvas s (vektorba);
+     Szorz¢t bl t betenni m trixba;
+     Lott¢sz mok gener l sa 52 h‚tre, Kiiratni az egyes sz mok gyakoris g t;
+     2 m trix ”sszege;
+     Minimum elem kiolvas sa m trixb¢l;
+     F“ tl¢ elemeinek szorzata;
+     Bek‚rt elem besz£r sa a rendezett vektorba (megfelel‹ helyre);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

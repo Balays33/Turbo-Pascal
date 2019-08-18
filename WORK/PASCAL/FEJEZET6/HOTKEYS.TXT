@@ -1,0 +1,16 @@
+F1       - Hot Keys                - If Bar Selected (with right button)
+F2       - File Save
+Shift+F2 - File Save As              x,h - Mirror Horizontal
+F3       - File Open                 y,v - Mirror Vertical
+Shift+F3 - File Import               r   - Rotate
+F4       - Save Palette              i   - Inverse
+F5       - Load Palette              Ins - Copy
+F6       - Animate                   Del - Delete
+F7       - Change
+F8       - Set Color
+Arrows   - Move
++/-      - Zoom
+Ins,I    - New Phase
+0..9     - Show Phase 0..9
+Pg Up/Dn - Next/Prev Phase
+Alt+X    - Exit

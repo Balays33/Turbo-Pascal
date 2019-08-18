@@ -1,0 +1,22 @@
+                                Kirak¢ j t‚k
+
+A j t‚k szab lyai:
+
+A j t‚kot egy 4 x 4 kock b¢l  ll¢ t bl n j tsszuk. A t bla mez“i k”zl egy
+ res, a t”bbin pedig az 1 ‚s 15 k”z‚ es“ sz mok tal lhat¢k. A j t‚k kezdet‚n
+ a g‚p kirajzolja a t bl t, olyan m¢don, hogy a sz mok n”vekv“ sorrendben
+ k”vetik egym st. R”vid v rakoz s ut n a g‚p elkezdi ”sszekeverni a sz mokat,
+ ‚s ezt egy billenty– let‚s‚ig teszi. A j t‚k ezut n kezd“dik, ugyanis a
+ t bl n ism‚t ki kell rakni az eredeti sorrendet, m‚gpedig £gy, hogy mindig
+ az res mez“t cser‚ljk ki a n‚gy szomsz‚dos mez“ valamelyik‚vel. A csere
+ v‚grehajt s hoz a kurzormozgat¢ billenty–ket haszn ljuk. A j t‚k v‚g‚n
+ ki¡r¢dik a l‚p‚sek sz ma valamint a sz mok rendberak s val elt”lt”tt id“.
+
+
+A j t‚k haszn lata:
+
+A j t‚k kezdet‚n a sz m¡t¢g‚p elkezdi ”sszekeverni a sz mokat. Ez b rmelyik
+ billenty– let‚s‚vel megszak¡that¢. A rendberak shoz a kurzormozgat¢ billen-
+ ty–ket haszn ljuk, ezek let‚sekor felcser‚l“dik az res mez“ ‚s a kurzormoz-
+ gat¢ billenty–  ltal kijel”lt szomsz‚dja. A j t‚k az "Esc" billenty– let‚-
+ s‚vel a kever‚s ut n b rmikor megszak¡that¢.

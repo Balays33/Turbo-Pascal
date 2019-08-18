@@ -1,0 +1,97 @@
+Program kep;
+
+
+   procedure Loadlbm(FileName: string; p: pointer);
+
+     var f: file;
+         p1, p2: pointer;
+         i,j: byte;
+         error: boolean;
+         fs: word;
+     const
+         lab: array[0..3] of char = 'BODY';
+
+     begin
+      mark( p1);
+      assign( f, FileName);
+      reset(f, 1);
+      if ioresult<>0 then begin
+       write('Nincs ilyen f jl');
+       halt;
+       end;
+      fs:= filesize( f);
+      if fs>65520 then halt;
+      getmem( p2, fs);
+
+      blockread( f, p2^, fs);
+      close( f);
+      for i:= 0 to 255 do begin
+       port[$3c9]:=mem[seg(p2^):ofs(p2^)+$30+3*i+j] shr 2;
+      end;
+      asm
+      mov error,0
+      mov al,byte [lab]
+      les di,p2
+      mov bx,di
+      mov cx,fs
+      cld
+   @1:repnz scasb
+      jnz @err
+      mov si,offset lab
+      push di
+      push cx
+      dec di
+      mov cx,4
+      repz cmpsb
+      pop cx
+      pop di
+      jnz @1
+      mov dx,es:[di+5]
+      xchg dl,dh
+
+      add di,7
+      push ds
+      mov ax,di
+      les di,p
+      lds si,p2
+      sub ax,bx
+      add si,ax
+      xor ch,ch
+   @2:cmp dx,0
+      jz @vege
+      mov cl,[si]
+      inc si
+      dec dx
+      test cl,128
+      jz @normal
+      neg cl
+      inc cl
+      mov al,[si]
+      inc si
+      dec dx
+      rep stosb
+      jmp @2
+   @normal:
+      inc cl
+      sub dx,cx
+      rep movsb
+      jmp @2
+   @err:
+      mov error,1
+   @vege:
+      pop ds
+     end;
+   if Error then begin
+    asm
+      mov ax,03h
+      int 10h
+     end;
+    writeln('Olvas si hiba: '''+FileName+''''+#7);
+    halt
+    end;
+    release( p1);
+    end;
+
+    begin
+      Loadlbm(FileName: string; p: pointer);
+    end.
